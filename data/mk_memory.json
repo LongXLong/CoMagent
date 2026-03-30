@@ -1,0 +1,497 @@
+{
+  "question_types": {
+    "TEXT_WRITING": {
+      "description": "固定 16 类策略",
+      "strategy": {
+        "similarity_threshold": 0.9,
+        "improvement_min": 0.05,
+        "max_loops": 3
+      },
+      "agent_priorities": {},
+      "thresholds": {
+        "confidence_low": 0.6,
+        "consistency_low": 0.7,
+        "confidence_high": 0.8,
+        "consistency_high": 0.8
+      },
+      "agent_effectiveness": {},
+      "agent_mab_stats": {}
+    },
+    "SUMMARIZATION": {
+      "description": "固定 16 类策略",
+      "strategy": {
+        "similarity_threshold": 0.9,
+        "improvement_min": 0.05,
+        "max_loops": 3
+      },
+      "agent_priorities": {},
+      "thresholds": {
+        "confidence_low": 0.6,
+        "consistency_low": 0.7,
+        "confidence_high": 0.8,
+        "consistency_high": 0.8
+      },
+      "agent_effectiveness": {},
+      "agent_mab_stats": {}
+    },
+    "CODE_DEVELOPMENT": {
+      "description": "由 LTM 自动衍生（来自 2 条记录）",
+      "strategy": {
+        "similarity_threshold": 0.9,
+        "improvement_min": 0.05,
+        "max_loops": 3
+      },
+      "agent_priorities": {
+        "questioner": 1.0,
+        "logic_analyzer": 1.0,
+        "authority_checker": 0.9400000000000002,
+        "explainer": 0.7300000000000001,
+        "economics_expert": 0.52,
+        "math_expert": 0.52,
+        "philosophy_expert": 0.5,
+        "science_expert": 0.52,
+        "critic": 0.5700000000000001,
+        "supporter": 0.5700000000000001,
+        "clarity_checker": 0.6000000000000001,
+        "completeness_checker": 0.55,
+        "evidence_checker": 0.6000000000000001,
+        "brevity_advisor": 0.5,
+        "audience_advisor": 0.5700000000000001
+      },
+      "thresholds": {
+        "confidence_low": 0.6,
+        "consistency_low": 0.7,
+        "confidence_high": 0.8,
+        "consistency_high": 0.8
+      },
+      "agent_effectiveness": {
+        "questioner": 1.0,
+        "logic_analyzer": 1.0,
+        "authority_checker": 1.0,
+        "explainer": 0.9800000000000001,
+        "economics_expert": 0.74,
+        "math_expert": 0.77,
+        "philosophy_expert": 0.73,
+        "science_expert": 0.78,
+        "critic": 0.76,
+        "supporter": 0.8,
+        "clarity_checker": 0.81,
+        "completeness_checker": 0.77,
+        "evidence_checker": 0.8,
+        "brevity_advisor": 0.72,
+        "audience_advisor": 0.78
+      },
+      "agent_mab_stats": {}
+    },
+    "KNOWLEDGE_QA": {
+      "description": "由 LTM 自动衍生（来自 12 条记录）",
+      "strategy": {
+        "similarity_threshold": 0.9,
+        "improvement_min": 0.05,
+        "max_loops": 3
+      },
+      "agent_priorities": {
+        "questioner": 1.0,
+        "logic_analyzer": 1.0,
+        "authority_checker": 0.9400000000000002,
+        "explainer": 0.7300000000000001,
+        "economics_expert": 0.52,
+        "math_expert": 0.52,
+        "philosophy_expert": 0.5,
+        "science_expert": 0.52,
+        "critic": 0.5700000000000001,
+        "supporter": 0.5700000000000001,
+        "clarity_checker": 0.6000000000000001,
+        "completeness_checker": 0.55,
+        "evidence_checker": 0.6000000000000001,
+        "brevity_advisor": 0.5,
+        "audience_advisor": 0.5700000000000001
+      },
+      "thresholds": {
+        "confidence_low": 0.6,
+        "consistency_low": 0.7,
+        "confidence_high": 0.8,
+        "consistency_high": 0.8
+      },
+      "agent_effectiveness": {
+        "questioner": 1.0,
+        "logic_analyzer": 1.0,
+        "authority_checker": 1.0,
+        "explainer": 0.9800000000000001,
+        "economics_expert": 0.74,
+        "math_expert": 0.77,
+        "philosophy_expert": 0.73,
+        "science_expert": 0.78,
+        "critic": 0.76,
+        "supporter": 0.8,
+        "clarity_checker": 0.81,
+        "completeness_checker": 0.77,
+        "evidence_checker": 0.8,
+        "brevity_advisor": 0.72,
+        "audience_advisor": 0.78
+      },
+      "agent_mab_stats": {}
+    },
+    "EDUCATIONAL_TUTORING": {
+      "description": "固定 16 类策略",
+      "strategy": {
+        "similarity_threshold": 0.9,
+        "improvement_min": 0.05,
+        "max_loops": 3
+      },
+      "agent_priorities": {},
+      "thresholds": {
+        "confidence_low": 0.6,
+        "consistency_low": 0.7,
+        "confidence_high": 0.8,
+        "consistency_high": 0.8
+      },
+      "agent_effectiveness": {},
+      "agent_mab_stats": {}
+    },
+    "TRANSLATION_LOCALIZATION": {
+      "description": "固定 16 类策略",
+      "strategy": {
+        "similarity_threshold": 0.9,
+        "improvement_min": 0.05,
+        "max_loops": 3
+      },
+      "agent_priorities": {},
+      "thresholds": {
+        "confidence_low": 0.6,
+        "consistency_low": 0.7,
+        "confidence_high": 0.8,
+        "consistency_high": 0.8
+      },
+      "agent_effectiveness": {},
+      "agent_mab_stats": {}
+    },
+    "CREATIVE_IDEATION": {
+      "description": "固定 16 类策略",
+      "strategy": {
+        "similarity_threshold": 0.9,
+        "improvement_min": 0.05,
+        "max_loops": 3
+      },
+      "agent_priorities": {},
+      "thresholds": {
+        "confidence_low": 0.6,
+        "consistency_low": 0.7,
+        "confidence_high": 0.8,
+        "consistency_high": 0.8
+      },
+      "agent_effectiveness": {},
+      "agent_mab_stats": {}
+    },
+    "DATA_PROCESSING": {
+      "description": "固定 16 类策略",
+      "strategy": {
+        "similarity_threshold": 0.9,
+        "improvement_min": 0.05,
+        "max_loops": 3
+      },
+      "agent_priorities": {},
+      "thresholds": {
+        "confidence_low": 0.6,
+        "consistency_low": 0.7,
+        "confidence_high": 0.8,
+        "consistency_high": 0.8
+      },
+      "agent_effectiveness": {},
+      "agent_mab_stats": {}
+    },
+    "ROLE_PLAYING": {
+      "description": "固定 16 类策略",
+      "strategy": {
+        "similarity_threshold": 0.9,
+        "improvement_min": 0.05,
+        "max_loops": 3
+      },
+      "agent_priorities": {},
+      "thresholds": {
+        "confidence_low": 0.6,
+        "consistency_low": 0.7,
+        "confidence_high": 0.8,
+        "consistency_high": 0.8
+      },
+      "agent_effectiveness": {},
+      "agent_mab_stats": {}
+    },
+    "CAREER_BUSINESS": {
+      "description": "固定 16 类策略",
+      "strategy": {
+        "similarity_threshold": 0.9,
+        "improvement_min": 0.05,
+        "max_loops": 3
+      },
+      "agent_priorities": {},
+      "thresholds": {
+        "confidence_low": 0.6,
+        "consistency_low": 0.7,
+        "confidence_high": 0.8,
+        "consistency_high": 0.8
+      },
+      "agent_effectiveness": {},
+      "agent_mab_stats": {}
+    },
+    "LIFE_EMOTIONAL": {
+      "description": "固定 16 类策略",
+      "strategy": {
+        "similarity_threshold": 0.9,
+        "improvement_min": 0.05,
+        "max_loops": 3
+      },
+      "agent_priorities": {},
+      "thresholds": {
+        "confidence_low": 0.6,
+        "consistency_low": 0.7,
+        "confidence_high": 0.8,
+        "consistency_high": 0.8
+      },
+      "agent_effectiveness": {},
+      "agent_mab_stats": {}
+    },
+    "MARKETING_COPYWRITING": {
+      "description": "固定 16 类策略",
+      "strategy": {
+        "similarity_threshold": 0.9,
+        "improvement_min": 0.05,
+        "max_loops": 3
+      },
+      "agent_priorities": {},
+      "thresholds": {
+        "confidence_low": 0.6,
+        "consistency_low": 0.7,
+        "confidence_high": 0.8,
+        "consistency_high": 0.8
+      },
+      "agent_effectiveness": {},
+      "agent_mab_stats": {}
+    },
+    "LOGICAL_REASONING": {
+      "description": "由 LTM 自动衍生（来自 1 条记录）",
+      "strategy": {
+        "similarity_threshold": 0.9,
+        "improvement_min": 0.05,
+        "max_loops": 3
+      },
+      "agent_priorities": {
+        "questioner": 1.0,
+        "logic_analyzer": 1.0,
+        "authority_checker": 0.9400000000000002,
+        "explainer": 0.7300000000000001,
+        "economics_expert": 0.52,
+        "math_expert": 0.52,
+        "philosophy_expert": 0.5,
+        "science_expert": 0.52,
+        "critic": 0.5700000000000001,
+        "supporter": 0.5700000000000001,
+        "clarity_checker": 0.6000000000000001,
+        "completeness_checker": 0.55,
+        "evidence_checker": 0.6000000000000001,
+        "brevity_advisor": 0.5,
+        "audience_advisor": 0.5700000000000001
+      },
+      "thresholds": {
+        "confidence_low": 0.6,
+        "consistency_low": 0.7,
+        "confidence_high": 0.8,
+        "consistency_high": 0.8
+      },
+      "agent_effectiveness": {
+        "questioner": 1.0,
+        "logic_analyzer": 1.0,
+        "authority_checker": 1.0,
+        "explainer": 0.9800000000000001,
+        "economics_expert": 0.74,
+        "math_expert": 0.77,
+        "philosophy_expert": 0.73,
+        "science_expert": 0.78,
+        "critic": 0.76,
+        "supporter": 0.8,
+        "clarity_checker": 0.81,
+        "completeness_checker": 0.77,
+        "evidence_checker": 0.8,
+        "brevity_advisor": 0.72,
+        "audience_advisor": 0.78
+      },
+      "agent_mab_stats": {}
+    },
+    "MATH_COMPUTATION": {
+      "description": "由 LTM 自动衍生（来自 8 条记录）",
+      "strategy": {
+        "similarity_threshold": 0.9,
+        "improvement_min": 0.05,
+        "max_loops": 3
+      },
+      "agent_priorities": {
+        "questioner": 1.0,
+        "logic_analyzer": 1.0,
+        "authority_checker": 0.9400000000000002,
+        "explainer": 0.7300000000000001,
+        "economics_expert": 0.52,
+        "math_expert": 0.52,
+        "philosophy_expert": 0.5,
+        "science_expert": 0.52,
+        "critic": 0.5700000000000001,
+        "supporter": 0.5700000000000001,
+        "clarity_checker": 0.6000000000000001,
+        "completeness_checker": 1.0,
+        "evidence_checker": 1.0,
+        "brevity_advisor": 0.6200000000000001,
+        "audience_advisor": 0.5700000000000001,
+        "consistency_checker": 1.0,
+        "clarity_editor": 0.5900000000000001,
+        "logic_checker": 1.0,
+        "relevancy_checker": 0.7400000000000002
+      },
+      "thresholds": {
+        "confidence_low": 0.6,
+        "consistency_low": 0.7,
+        "confidence_high": 0.8,
+        "consistency_high": 0.8
+      },
+      "agent_effectiveness": {
+        "questioner": 1.0,
+        "logic_analyzer": 1.0,
+        "authority_checker": 1.0,
+        "explainer": 0.9800000000000001,
+        "economics_expert": 0.74,
+        "math_expert": 0.77,
+        "philosophy_expert": 0.73,
+        "science_expert": 0.78,
+        "critic": 0.76,
+        "supporter": 0.8,
+        "clarity_checker": 0.81,
+        "completeness_checker": 1.0,
+        "evidence_checker": 1.0,
+        "brevity_advisor": 0.8400000000000001,
+        "audience_advisor": 0.78,
+        "consistency_checker": 1.0,
+        "clarity_editor": 0.5900000000000001,
+        "logic_checker": 1.0,
+        "relevancy_checker": 0.7400000000000002
+      },
+      "agent_mab_stats": {
+        "logic_checker": {
+          "reward_sum": 84.0,
+          "sq_reward_sum": 84.0,
+          "total_tasks": 92
+        },
+        "clarity_editor": {
+          "reward_sum": 0.0,
+          "sq_reward_sum": 0.0,
+          "total_tasks": 1
+        },
+        "completeness_checker": {
+          "reward_sum": 45.0,
+          "sq_reward_sum": 45.0,
+          "total_tasks": 70
+        },
+        "consistency_checker": {
+          "reward_sum": 33.0,
+          "sq_reward_sum": 33.0,
+          "total_tasks": 62
+        },
+        "evidence_checker": {
+          "reward_sum": 11.0,
+          "sq_reward_sum": 11.0,
+          "total_tasks": 24
+        },
+        "brevity_advisor": {
+          "reward_sum": 1.0,
+          "sq_reward_sum": 1.0,
+          "total_tasks": 3
+        },
+        "harmlessness_checker": {
+          "reward_sum": 0.0,
+          "sq_reward_sum": 0.0,
+          "total_tasks": 1
+        },
+        "fluency_editor": {
+          "reward_sum": 0.0,
+          "sq_reward_sum": 0.0,
+          "total_tasks": 1
+        },
+        "relevancy_checker": {
+          "reward_sum": 8.0,
+          "sq_reward_sum": 8.0,
+          "total_tasks": 21
+        },
+        "compliance_checker": {
+          "reward_sum": 0.0,
+          "sq_reward_sum": 0.0,
+          "total_tasks": 1
+        }
+      }
+    },
+    "MULTIMODAL": {
+      "description": "固定 16 类策略",
+      "strategy": {
+        "similarity_threshold": 0.9,
+        "improvement_min": 0.05,
+        "max_loops": 3
+      },
+      "agent_priorities": {},
+      "thresholds": {
+        "confidence_low": 0.6,
+        "consistency_low": 0.7,
+        "confidence_high": 0.8,
+        "consistency_high": 0.8
+      },
+      "agent_effectiveness": {},
+      "agent_mab_stats": {}
+    },
+    "OTHER_GENERAL_Q": {
+      "description": "由 LTM 自动衍生（来自 5 条记录）",
+      "strategy": {
+        "similarity_threshold": 0.9,
+        "improvement_min": 0.05,
+        "max_loops": 3
+      },
+      "agent_priorities": {
+        "questioner": 1.0,
+        "logic_analyzer": 1.0,
+        "authority_checker": 0.9400000000000002,
+        "explainer": 0.7300000000000001,
+        "economics_expert": 0.52,
+        "math_expert": 0.52,
+        "philosophy_expert": 0.5,
+        "science_expert": 0.52,
+        "critic": 0.5700000000000001,
+        "supporter": 0.5700000000000001,
+        "clarity_checker": 0.6000000000000001,
+        "completeness_checker": 0.55,
+        "evidence_checker": 0.6000000000000001,
+        "brevity_advisor": 0.5,
+        "audience_advisor": 0.5700000000000001
+      },
+      "thresholds": {
+        "confidence_low": 0.6,
+        "consistency_low": 0.7,
+        "confidence_high": 0.8,
+        "consistency_high": 0.8
+      },
+      "agent_effectiveness": {
+        "questioner": 1.0,
+        "logic_analyzer": 1.0,
+        "authority_checker": 1.0,
+        "explainer": 0.9800000000000001,
+        "economics_expert": 0.74,
+        "math_expert": 0.77,
+        "philosophy_expert": 0.73,
+        "science_expert": 0.78,
+        "critic": 0.76,
+        "supporter": 0.8,
+        "clarity_checker": 0.81,
+        "completeness_checker": 0.77,
+        "evidence_checker": 0.8,
+        "brevity_advisor": 0.72,
+        "audience_advisor": 0.78
+      },
+      "agent_mab_stats": {}
+    }
+  },
+  "default_type": "general",
+  "last_update": "2026-03-23"
+}

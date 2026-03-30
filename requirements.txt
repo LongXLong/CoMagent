@@ -1,0 +1,14 @@
+openai>=1.0.0
+fastapi>=0.100.0
+uvicorn[standard]>=0.22.0
+pandas>=2.0.0
+numpy
+pyarrow
+
+# additional dependencies for HuggingFace LLM support
+requests>=2.28.0
+huggingface-hub>=0.16.0
+
+# if you intend to run models locally, install transformers/torch as well
+# transformers>=4.35.0
+# torch>=2.0.0

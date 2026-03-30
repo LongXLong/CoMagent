@@ -1,0 +1,30 @@
+# 日志目录
+log/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# 环境
+.env
+.venv/
+venv/
+env/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Local LTM assets
+/data/ltm.json
+/data/ltm_store.parquet
+/data/ltm_store_embeddings.npy
+/data/ltm_embeddings.json
+
+/cfg
